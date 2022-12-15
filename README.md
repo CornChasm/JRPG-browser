@@ -1,1 +1,1 @@
-https://cornchasm.github.io/JRPG-browser/public_html/starting/
+https://cornchasm.github.io/JRPG-browser/index.html
