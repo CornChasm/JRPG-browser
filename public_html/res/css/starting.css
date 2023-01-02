@@ -1,0 +1,52 @@
+
+@font-face {
+    font-family: Octopath;
+    src: url(../font/print_clearly.ttf);
+}
+@font-face {
+    font-family: Octopath;
+    src: url(../font/print_bold.ttf);
+    font-weight: bold;
+}
+:root{
+    --border: #ded4c0;
+    --borderBG: #18140f;
+}
+body{
+    background-image: url(../img/TitleBG.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #013c58;
+}
+#Title{
+    background-image: url(../img/Title.png);
+    width: 932px;
+    height: 284px;
+    background-size: cover;
+    background-color: transparent;
+    margin:auto;
+}
+button{
+    width: 350px;
+    color: var(--border);
+    border: 40px solid transparent;
+    border-image: url(../img/MenuBorder.png) 96 stretch;
+    border-radius: 20px;
+    background-color: var(--borderBG);
+    font-family: Octopath;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    image-rendering: pixelated;
+    line-height: 80px;
+    position: absolute;
+    top: 50%;
+}
+#Start{
+    left: 30%;
+    transform: translate(-50%);
+}
+#Reset{
+    right: 30%;
+    transform: translate(50%);
+}
