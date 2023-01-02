@@ -5,10 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../res/css/plains.css">
-    <title>Document</title>
+    <title>Plains</title>
 </head>
 <body>
-    <div class="Cyrus" id="deez"></div>
+    <button id="attackButton">Attack</button>
+    <div class="Wolf">
+        <div class="wolfInfoSection">
+            <div id="wolfHPValue"></div>
+            <div id="wolfHPBar"><div id="wolfHPBarBG"></div></div>
+        </div>
+        <div id="wolfIdle"></div>
+    </div>
+    <div class="party">
+        <div class="items">
+            <div class="potionAmount">
+                <div id="lowHPAmount">0x</div>
+                <div id="midHPAmount">0x</div>
+                <div id="highHPAmount">0x</div>
+            </div>
+            <div class="potions">
+                <div id="lowHP"></div>
+                <div id="midHP"></div>
+                <div id="highHP"></div>
+            </div>
+        </div>
+        <div id="partyHPValue"></div>
+        <div id="partyHPBar"><div id="partyHPBarBG"></div></div>
+        <div class="Ophilia"><div id="ophiliaIdle"></div></div>
+        <div class="Alfyn"><div id="alfynIdle"></div></div>
+        <div class="Cyrus"><div id="cyrusIdle"></div></div>
+    </div>
     <script src="../res/js/plains.js"></script>
 </body>
 </html>

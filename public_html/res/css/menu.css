@@ -4,12 +4,12 @@
     font-weight: bold;
 }
 :root{
-    --blue: rgb(100, 124, 128);
-    --border: #ded4c0;
-    --borderBG: #18140f;
+    --blue: #647c80;
+    --white: #ded4c0;
+    --brown: #18140f;
 }
 html{
-    background-color: var(--borderBG);
+    background-color: var(--brown);
     background-image: url(../img/town.png);
     background-repeat: no-repeat;
     background-position-x: center;
@@ -26,7 +26,7 @@ html{
     grid-gap: 3px;
     padding: 3px 9px 3px 3px;
     grid-template-columns: 200px 200px 200px;
-    background-color: var(--borderBG);
+    background-color: var(--brown);
     width: 600px;
     position: absolute;
     left: 50%;
@@ -41,7 +41,7 @@ background-color:black;
 background-size: cover;
 font-size: 72px;
 text-align: center;
-color: var(--border);
+color: var(--white);
 line-height: 300px;
 }
 #plains{
@@ -57,8 +57,8 @@ background-image: url(../img/RoadIcon.png);
 .characters{
     padding: 3px 9px 3px 3px;
     display: grid;
-    background-color: var(--border);
-    outline: var(--borderBG) 5px solid;
+    background-color: var(--white);
+    outline: var(--brown) 5px solid;
     gap: 3px;
     width: 318px;
     height: 74px;
@@ -68,8 +68,8 @@ background-image: url(../img/RoadIcon.png);
     bottom: 20px;
     transform: translate(-50%);
 }
-.border{
-    background-color: var(--borderBG);
+.white{
+    background-color: var(--brown);
 }
 .Cyrus, .Alfyn, .Ophilia{
     background: url('../img/IdleAnims.png') no-repeat 0 0%;
@@ -112,10 +112,10 @@ background-image: url(../img/RoadIcon.png);
     left: 50%;
     bottom: 120px;
     transform: translate(-50%);
-    background-color: var(--borderBG);
-    border: 4px var(--border) solid;
-    outline: var(--borderBG) 5px solid;
-    color: var(--border)
+    background-color: var(--brown);
+    border: 4px var(--white) solid;
+    outline: var(--brown) 5px solid;
+    color: var(--white)
 }
 .statsTable{
     width: 318px;

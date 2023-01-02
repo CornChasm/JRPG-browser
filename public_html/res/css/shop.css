@@ -1,0 +1,280 @@
+@font-face {
+    font-family: Octopath;
+    src: url(../font/print_bold.ttf);
+    font-weight: bold;
+}
+:root{
+    --blue: #39b0dc;
+    --white: #ded4c0;
+    --brown: #18140f;
+    --red: #bc3131;
+    --green: #41804b;
+    --yellow: #e6cc3c;
+    --gray: #4e4949;
+}
+html{
+    background-color: var(--white);
+    image-rendering: optimizeSpeed;
+    font-weight: bold;
+    font-family: Octopath;
+    user-select: none;
+    color: var(--white);
+}
+
+.all{
+    display: grid;
+}
+.all > div{
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+}
+.shopTop{
+    margin: 30px 30px 15px 30px;
+}
+.shopBottom{
+    margin: 15px 30px 30px 30px;
+}
+
+:is(.shopTop, .shopBottom) > div{
+    background-color: var(--brown);
+    border:var(--white) 5px solid;
+    outline: var(--brown) 5px solid;
+}
+#categories{
+    width: 22%;
+    height: 550px;
+    font-size: 64px;
+    text-align: center;
+    line-height: 80px;
+}
+#categoriesTitle{
+    font-size: 72px;
+    line-height: 100px;
+}
+#moneyCounter{
+    line-height: 150px;
+    text-align: left;
+    margin-left: 20px;
+}
+.items{
+    width: 75%;
+    height: 550px;
+    font-size: 64px;
+    text-align: left;
+    line-height: 80px;
+    overflow-y: scroll;
+}
+#insideItems{
+    margin-left: 25px;
+}
+#insideItems > div{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    text-align: center;
+}
+#insideItems + :not(.potions, .food, .armor, .weapons){
+margin-top: 15px;
+margin-bottom: 5px;
+}
+.potions > div{
+    width: 152px;
+    height: 144px;
+    image-rendering: pixelated;
+    border: var(--red) 6px solid;
+    outline: var(--white) 5px solid;
+    background: url(../img/potions.png);
+    background-size: 912px 144px;
+    background-repeat: no-repeat;
+    background-color: var(--white);
+}
+#lowHP{
+    background-position: 0px 0px;
+}
+#midHP{
+    background-position: -152px 0px;
+}
+#highHP{
+    background-position: -304px 0px;
+}
+#lowMP{
+    background-position: -456px 0px;
+}
+#midMP{
+    background-position: -608px 0px;
+}
+#highMP{
+    background-position: -760px 0px;
+}
+
+:is(.armor, .weapons, .food) > div{
+    width: 152px;
+    height: 144px;
+    image-rendering: pixelated;
+    border: var(--red) 6px solid;
+    outline: var(--white) 5px solid;
+    background: url(../img/items.png);
+    background-size: 864px 432px;
+    background-repeat: no-repeat;
+    background-color: var(--white);
+}
+.armor > :is(div){
+    background-position-y: -144px;
+}
+.weapons > :is(div){
+    background-position-y: -288px;
+    margin-bottom: 30px;
+}
+:is(.armor, .weapons, .food) > .item1{
+    background-position-x: 1px;
+}
+:is(.armor, .weapons, .food) > .item2{
+    background-position-x: -143px;
+}
+:is(.armor, .weapons, .food) > .item3{
+    background-position-x: -287px;
+}
+:is(.armor, .weapons, .food) > .item4{
+    background-position-x: -431px;
+}
+:is(.armor, .weapons, .food) > .item5{
+    background-position-x: -575px;
+}
+:is(.armor, .weapons, .food) > .item6{
+    background-position-x: -719px;
+}
+
+.buyingMenu{
+    width: 22%;
+    height: 400px;
+}
+.shopkeeper{
+    width: 22%;
+    height: 245px;
+}
+.descriptionWindow{
+    width: 50%;
+    margin-left: 2px;
+}
+.shopkeeper{
+    background: url(../img/shopOwner.png);
+    background-size: 244px 232px;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-position: right bottom;
+}
+.goback{
+    background-color: var(--brown);
+    border:var(--white) 5px solid;
+    outline: var(--brown) 5px solid;
+    width: 102%;
+    height: 125px;
+    position: relative;
+    top: 280px;
+    font-size: 64px;
+    font-family: Octopath;
+    font-weight: bold;
+    color: var(--white);
+    padding: 0px 30px 0px 30px;
+    margin-left: -5px;
+}
+table{
+    font-size: 60px;
+    width: 95%;
+    text-align: left;
+    line-height: 80px;
+    margin-top: 15px;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+tr{
+    text-align: left;
+}
+#shopStatEffect{
+    width: 100px
+}
+#shopStat{
+    width: 150px
+}
+tr > :not(#shopStatEffect){
+    padding-left: 80px;
+    font-size: 40px;
+}
+.priceDiv{
+    width: 50%;
+    font-size: 60px;
+    text-align: left;
+    line-height: 80px;
+    margin-left: 25px;
+    position: relative;
+    top: 30%;
+}
+#buyButtonPlus{
+    width: 128px;
+    height: 128px;
+    outline: var(--white) 5px solid;
+    background-image: url(../img/buyIcons.png);
+    background-color: var(--brown);
+    background-size: 256px 128px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: translate(42%);
+    left: 42%;
+    top: 40px;
+}
+#buyButtonPlus:active{
+    background-image: url(../img/buyIconsClicked.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+}
+#buyButtonMinus{
+    width: 128px;
+    height: 128px;
+    outline: var(--white) 5px solid;
+    background-image: url(../img/buyIcons.png);
+    background-color: var(--brown);
+    background-size: 256px 128px;
+    background-position-x: -128px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    position: relative;
+    transform: translate(-85%);
+    left: 40%;
+    top: -88px;
+}
+#buyButtonMinus:active{
+    background-image: url(../img/buyIconsClicked.png);
+    background-position-x: -128px;
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+}
+#buyItemAmount{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top: 15px;
+    width: 75%;
+    height: 100px;
+    outline: var(--white) 5px solid;
+    background-color: var(--brown);
+    text-align: center;
+    font-size: 100px;
+    line-height: 100px;
+}
+#buyComplete{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top: -70px;
+    width: 75%;
+    height: 100px;
+    outline: var(--white) 5px solid;
+    background-color: var(--brown);
+    background-image: url(../img/greenTick.png);
+    background-repeat: no-repeat;
+    background-size: 96px 96px;
+    image-rendering: pixelated;
+    background-position: 50%;
+}
