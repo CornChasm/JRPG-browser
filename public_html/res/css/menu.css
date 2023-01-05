@@ -68,7 +68,7 @@ background-image: url(../img/RoadIcon.png);
     bottom: 20px;
     transform: translate(-50%);
 }
-.white{
+.border{
     background-color: var(--brown);
 }
 .Cyrus, .Alfyn, .Ophilia{
